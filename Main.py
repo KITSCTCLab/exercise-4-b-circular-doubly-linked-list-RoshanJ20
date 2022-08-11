@@ -10,8 +10,7 @@ for i in range(5,length_of_circular_linked_list,3):
         break
     final_list.append(circular_linked_list[i])
     
-final_list = set(final_list)
-final_list = list(final_list)
+final_list.pop()
 
 print(len(final_list))
 for i in final_list:
