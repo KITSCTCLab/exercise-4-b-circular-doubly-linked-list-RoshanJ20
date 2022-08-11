@@ -33,7 +33,7 @@ circular_linked_list = list(map(int,input().strip().split(" ")))
 final_list = [circular_linked_list[i] for i in range(3)]
 for i in circular_linked_list:
     if i not in final_list:
-        final_list.append(circular_linked_list[i])
+        final_list.append(i)
     
 # if final_list[len(final_list)-1] == final_list[0]:    
 #     final_list.pop()
