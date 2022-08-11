@@ -4,13 +4,16 @@ length_of_circular_linked_list = int(input())
 circular_linked_list = list(map(int,input().strip().split(" ")))
 # Write your code here
 
+
+
+
 final_list = [circular_linked_list[i] for i in range(3)]
 for i in range(5,length_of_circular_linked_list,3):
     if i == final_list[0]:
         break
     final_list.append(circular_linked_list[i])
-    
-final_list.pop()
+if final_list[len(final_list)-1] == final_list[0]:    
+    final_list.pop()
 
 print(len(final_list))
 for i in final_list:
